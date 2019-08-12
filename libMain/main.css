@@ -1,0 +1,48 @@
+nav{
+    display: flex;
+    background: #4c96d7;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.logo{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    margin-top: 4%;
+    margin-left: 1%;
+}
+
+span{
+    width: 50%;
+    text-align: center;
+}
+
+.just{
+    color: #894e00;
+}
+
+.kicks{
+    color: #e4c79f;
+}
+.buttons {
+    display: flex;
+    margin-left: 40%;
+    margin-top: 5%;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 25px;
+    color: black;
+    padding: 20px;
+}
+
+a:hover {
+    /* border-style: inset; */
+    /* border-radius: 5px; */
+    /* border-width: 2px; */
+    color: white;
+    border-color: rgb(0, 162, 255);
+}
