@@ -12,6 +12,31 @@ signupForm.addEventListener(`submit`, (e) => {
         M.Modal.getInstance(modal).close();
         signupForm.reset();
     })
+    const usernameElement = document.getElementById("signup-name");
+    const emailElement = document.getElementById("signup-email")
+    const photoElement = document.getElementById("imgs")
+    const username = usernameElement.value;
+    const email2 = emailElement.value;
+    const photo2 = photoElement.value;
+    const database = firebase.database().ref("User");
+    usernameElement.value = "";
+    emailElement.value = "";
+    photoElement.value= "";
+    console.log(username + " : " + email2 + " : " + photo2 );
+
+    //Update database here
+    const value = {
+        NAME: username,
+        EMAIL: email2,
+        PHOTO: photo2
+    }
+    database.push(value)
+    const modal = document.querySelector(`#modal-signup`)
+    M.Modal.getInstance(modal).close();
+    signupForm.reset();
+
+
+    
 })
 
 //Logout users
@@ -23,21 +48,20 @@ logout.addEventListener(`click`, (e) => {
     })
 })
 
-
-
-const loginForm= document.querySelector(`#login-form`)
-loginForm.addEventListener(`submit`,(e)=>{
+const loginForm = document.querySelector(`#login-form`)
+loginForm.addEventListener(`submit`, (e) => {
     e.preventDefault();
 
     // user information
     const email = loginForm[`login-email`].value;
-    const password= loginForm[`login-password`].value;
+    const password = loginForm[`login-password`].value;
 
-    auth.signInWithEmailAndPassword(email,password).then(cred=>{
+    auth.signInWithEmailAndPassword(email, password).then(cred => {
         console.log(cred.user)
         //close the login form and resets
         const modal = document.querySelector(`#modal-login`)
         M.Modal.getInstance(modal).close();
-      loginForm.reset();
+        loginForm.reset();
     })
 })
+
