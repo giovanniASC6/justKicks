@@ -33,12 +33,16 @@ signupForm.addEventListener(`submit`, (e) => {
     database.push(value)
     const modal = document.querySelector(`#modal-signup`)
     M.Modal.getInstance(modal).close();
-    signupForm.reset();
-
-
-    
+    signupForm.reset();   
 })
-
+auth.onAuthStateChanged(user=>{
+    if(user){
+  setupUI(user);
+    } else{
+        console.log(`user logged out`)
+        setupUI()
+    }
+})
 //Logout users
 const logout = document.querySelector(`#logout`)
 logout.addEventListener(`click`, (e) => {
@@ -65,3 +69,37 @@ loginForm.addEventListener(`submit`, (e) => {
     })
 })
 
+database.on("child_added",addMessageToBoard)
+const accountContainer = document.querySelector(".account-details")
+
+
+function addMessageToBoard(rowData) {
+    const row=rowData.val()
+    const name =row.NAME
+    const email=row.EMAIL
+
+    const pElement=document.createElement("p")
+    pElement.innerText=`${name}
+    :${email}`
+    accountContainer.appendChild(pElement)
+}
+
+
+
+
+const loggedoutLinks = document.querySelectorAll(`.logged-out`)
+const loggedInLinks = document.querySelectorAll(`.logged-in`)
+
+
+const setupUI=(user)=>{
+    if (user){
+        loggedInLinks.forEach(item => item.getElementsByClassName.display=`block`)
+        loggedoutLinks.forEach(item => item.getElementsByClassName.display= `none`)
+
+    }
+    else {
+        loggedInLinks.forEach(item => item.getElementsByClassName.display=`none`)
+        loggedoutLinks.forEach(item => item.getElementsByClassName.display= `block`)
+ 
+    }
+}
