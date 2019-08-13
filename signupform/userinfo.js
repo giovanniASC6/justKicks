@@ -11,3 +11,8 @@ function addinfoToAcc(rowData){
     :${email}`
     messageContainer.appendChild(pElement)
 }
+
+
+
+
+
