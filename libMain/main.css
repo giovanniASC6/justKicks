@@ -34,6 +34,7 @@ span{
     /* height: 1vh; */
     
 }
+<<<<<<< HEAD
 
 a {
     text-decoration: none;
@@ -124,3 +125,5 @@ a:hover {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+=======
+>>>>>>> 07099ab36c51ca1e50b8ca39facc53dfd897f3f3
