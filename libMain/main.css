@@ -32,18 +32,3 @@ span{
     margin-bottom: 5%;
     height: 1vh;
 }
-
-a {
-    text-decoration: none;
-    margin-right: 25px;
-    color: black;
-    padding: 20px;
-}
-
-a:hover {
-    /* border-style: inset; */
-    /* border-radius: 5px; */
-    /* border-width: 2px; */
-    color: white;
-    border-color: rgb(0, 162, 255);
-}
