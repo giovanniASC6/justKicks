@@ -50,7 +50,9 @@ a:hover {
   border-color: rgb(0, 162, 255);
 }
 
-
+body{
+  /* background-color: #4c96d749; */
+}
 
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
     body, html {
@@ -59,7 +61,7 @@ a:hover {
   
   .bgimg {
     /* Background image */
-    background-image: url('https://cdn.arstechnica.net/wp-content/uploads/2016/02/5718897981_10faa45ac3_b-640x624.jpg');
+    background-image: url('https://pmcfootwearnews.files.wordpress.com/2016/11/nike-12-soles-mystery-drop.jpg?w=700&h=437&crop=1');
     /* Full-screen */
     height: 50%;
     /* Center the background image */
@@ -101,6 +103,7 @@ a:hover {
 }
 .header{
     text-align: center; 
+    /* background-color: #4c96d7; */
 }
 
 /*  */
@@ -109,6 +112,7 @@ a:hover {
     position: relative;
     width: 50%;
     display: flex;
+    /* background-color: #4c96d7; */
   }
   
   .image {

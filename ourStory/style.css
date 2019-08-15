@@ -1,0 +1,87 @@
+nav{
+    display: flex;
+    background: #4c96d7;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    margin-top: .5%;
+    margin-left: 1%;
+}
+
+span{
+    width: 50%;
+    text-align: center;
+}
+
+.just{
+    color: #894e00;
+}
+
+.kicks{
+    color: #e4c79f;
+}
+.buttons {
+    display: flex;
+    /* margin-left: 40%; */
+    margin-top: 1%;
+    justify-content: space-between;
+    /* margin-bottom: 2%; */
+    /* height: 1vh; */
+    font-family: 'Bitter', serif;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 25px;
+    color: black;
+    padding: 20px;
+}
+
+a:hover {
+    /* border-style: inset; */
+    /* border-radius: 5px; */
+    /* border-width: 2px; */
+    color: white;
+    border-color: rgb(0, 162, 255);
+}
+
+.head1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro{
+    font-size: 38px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+
+span{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 34px;
+}
+
+.mission{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 34px;
+}
+
+#us{
+    color: #4c96d7;
+}
+
+#vision{
+    color:black;
+}
+
+#help{
+    color: #894e00;
+}
