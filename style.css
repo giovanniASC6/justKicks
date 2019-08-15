@@ -4,6 +4,8 @@ nav{
     flex-flow: row wrap;
     width: 100%;
     justify-content: space-between;
+    font-family: serif;
+    margin-bottom: 10px;
 }
 
 .logo{
@@ -51,14 +53,10 @@ a:hover {
 }
 
 
-
-
 body{
-    padding-top: 20px;
-    background-color: gray;
-
-
-}
+    background-image: url("https://st.hzcdn.com/simgs/6321854d07c846bc_4-3745/home-design.jpg");
+    margin: 8px
+}   
 
 #sneaker{
     height: 350px;
@@ -128,6 +126,7 @@ body{
     margin-left: 15%;
     height: auto;
     text-align: center;
+    margin-top: 5%;
 }
 
 .carousel-control-prev-icon {
