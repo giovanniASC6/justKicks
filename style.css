@@ -145,3 +145,32 @@ body{
     height: 450px;
 
 }
+
+
+
+.modal-content{
+    background-color: rgba(255, 255, 255, 0.856);  
+    width: 30%;
+    height:40%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 570px;
+}
+
+
+
+
+
+
+
+
+
+.dropbtn{
+    border: none;
+    padding: 0;
+    background-color: #4c96d7;
+    margin-top: 19.20px;
+    margin-right: 20px;
+}

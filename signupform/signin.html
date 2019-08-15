@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
     <script text="text/javascript" src="setup.js" defer></script>
     <script text="text/javascript" src="auth.js" defer></script>
+    <link rel="stylesheet" href="/accout.css" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
     <title>JustKicks</title>
 </head>
 
@@ -20,22 +24,45 @@
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/WPVG_icon_2016.svg/1024px-WPVG_icon_2016.svg.png"
                     style="width: 180px; margin-top: 10px;">
             </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="logged-in">
-                    <a href="#" class="grey-text modal-trigger" data-target="modal-account">Account</a>
-                </li>
-                <li class="logged-in">
-                    <a href="#" class="grey-text" id="logout">Logout</a>
-                </li>
-                <li class="logged-out">
-                    <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
-                </li>
-                <li class="logged-out">
-                    <a href="#" class="grey-text modal-trigger" data-target="modal-signup">Sign up</a>
-                </li>
-            </ul>
+            <!-- <div class="buttons"> -->
+
+
+
+
+            <div class="w3-dropdown-hover">
+                <button class="w3-button w3-black">Hover Over Me!</button>
+                <div class="w3-dropdown-content w3-bar-block w3-border">
+                    <a id="nav-mobile" class="right hide-on-med-and-down">
+                        <a class="logged-in">
+                            <div href="#" class="grey-text modal-trigger" data-target="modal-account">
+                                <a href="#" class="w3-bar-item w3-button">Account </a>
+                            </div>
+                        </a>
+                        <a class="logged-in">
+                            <div href="#" class="grey-text" id="logout">
+                                <a href="#" class="w3-bar-item w3-button">Logout</a>
+                            </div>
+                        </a>
+
+
+                        <a class="logged-out">
+                            <div href="#" class="grey-text modal-trigger" data-target="modal-login">
+                                <a href="#" class="w3-bar-item w3-button">Login</a>
+                            </div>
+                        </a>
+
+
+                        <a class="logged-out">
+                            <div href="#" class="grey-text modal-trigger" data-target="modal-signup"> <a href="#"
+                                    class="w3-bar-item w3-button"> Signup</a>
+                            </div>
+                        </a>
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
+
     <!-- SIGN UP form -->
     <div id="modal-signup" class="modal">
         <div class="modal-content">
@@ -59,6 +86,9 @@
             </form>
         </div>
     </div>
+
+
+
     <!-- LOGIN form -->
     <div id="modal-login" class="modal">
         <div class="modal-content">
@@ -85,16 +115,16 @@
             </div>
         </div>
     </div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- The core Firebase JS SDK is always required and must be listed first
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script> -->
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
 
-    <script>
+    <!-- <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
             apiKey: "AIzaSyCTOt61c_haMNWh5U3SkWdvirTixRUE8BA",
@@ -110,7 +140,7 @@
         const auth = firebase.auth()
         const db = firebase.firestore()
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 </body>
 
 </html>
