@@ -22,7 +22,7 @@ signupForm.addEventListener(`submit`, (e) => {
     usernameElement.value = "";
     emailElement.value = "";
     photoElement.value= "";
-    console.log(username + " : " + email2 + " : " + photo2 );
+    // console.log(username + " : " + email2 + " : " + photo2 );
 
     //Update database here
     const value = {
@@ -69,9 +69,18 @@ loginForm.addEventListener(`submit`, (e) => {
     })
 })
 
-database.on("child_added",addMessageToBoard)
-const accountContainer = document.querySelector(".account-details")
 
+
+
+
+
+
+
+
+database.on("child_added",addMessageToBoard)
+
+
+const accountContainer = document.querySelector(".account-details")
 
 function addMessageToBoard(rowData) {
     const row=rowData.val()
@@ -79,10 +88,21 @@ function addMessageToBoard(rowData) {
     const email=row.EMAIL
 
     const pElement=document.createElement("p")
-    pElement.innerText=`${name}
-    :${email}`
+    pElement.innerText=`${name} :${email}`
     accountContainer.appendChild(pElement)
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

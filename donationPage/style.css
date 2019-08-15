@@ -50,10 +50,6 @@ a:hover {
     border-color: rgb(0, 162, 255);
 }
 
-
-
-
-
 .donation-container {
 	height: 1000px;
 	font-family: 'Montserrat', sans-serif;
@@ -356,4 +352,35 @@ margin-left: 25%
 .checkout-button-sku_FcJYckrYQPnN2H{
     margin: -10%;
     margin-left: 25%
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 607px) {
+	nav{
+		justify-content: center;
+	}
+}
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 834px) {
+	.buttons a{
+		padding: 10px;
+		margin-right: 10px;
+	}
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 656px) {
+	.buttons a{
+		padding: 5px;
+
+	}
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 400px) {
+	.donation-box{
+		width: auto;
+	}
+	.switch-label-on{
+		padding-right: 0px;
+	}
 }

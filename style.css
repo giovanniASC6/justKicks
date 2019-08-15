@@ -4,6 +4,8 @@ nav{
     flex-flow: row wrap;
     width: 100%;
     justify-content: space-between;
+    font-family: serif;
+    margin-bottom: 10px;
 }
 
 .logo{
@@ -18,7 +20,7 @@ span{
     text-align: center;
 }
 
-.just{
+.just{ 
     color: #894e00;
 }
 
@@ -32,7 +34,6 @@ span{
     justify-content: space-between;
     /* margin-bottom: 2%; */
     /* height: 1vh; */
-    
 }
 
 a {
@@ -48,17 +49,14 @@ a:hover {
     /* border-width: 2px; */
     color: white;
     border-color: rgb(0, 162, 255);
+    text-decoration: none;
 }
-
-
 
 
 body{
-    padding-top: 20px;
-    background-color: gray;
-
-
-}
+    background-image: url("https://st.hzcdn.com/simgs/6321854d07c846bc_4-3745/home-design.jpg");
+    margin: 8px
+}   
 
 #sneaker{
     height: 350px;
@@ -128,6 +126,7 @@ body{
     margin-left: 15%;
     height: auto;
     text-align: center;
+    margin-top: 5%;
 }
 
 .carousel-control-prev-icon {
@@ -144,4 +143,33 @@ body{
     width: auto;
     height: 450px;
 
+}
+
+
+
+.modal-content{
+    background-color: rgba(255, 255, 255, 0.856);  
+    width: 30%;
+    height:40%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 570px;
+}
+
+
+
+
+
+
+
+
+
+.dropbtn{
+    border: none;
+    padding: 0;
+    background-color: #4c96d7;
+    margin-top: 19.20px;
+    margin-right: 20px;
 }
